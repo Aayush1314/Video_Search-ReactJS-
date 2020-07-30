@@ -8,14 +8,15 @@ class Search extends React.Component{
     onFormSubmit = (event) => {
         event.preventDefault()
         
+        this.props.onFormSubmit(this.state.term)
     }
-
+    
     render(){
         return(
             <div className="container col-4">
-                <form onSubmit={this.onFormSubmit} class=" Search-bar md-form mt-2">
+                <form onSubmit={this.onFormSubmit} className=" Search-bar md-form mt-2">
                     <input 
-                        class="form-control" 
+                        className="form-control" 
                         type="text" 
                         placeholder="Video Search" 
                         aria-label="Search" 
