@@ -1,13 +1,3 @@
-/*
-.video-item img{
-    max-width: 100px;
-    height: 100px;
-}
-*/
-.video-item {
-    
-    vertical-align: middle;
-}
 
 .video-item{
     cursor: pointer;

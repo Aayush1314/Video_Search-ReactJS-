@@ -29,10 +29,10 @@ class App extends React.Component{
             <div className="container">
                 <Search onFormSubmit = {this.onFormSubmit} />   
                 <div className="row">
-                    <div className="col-md-9">
+                    <div className="col-md-8">
                         <VideoDetail selectedVideo = {this.state.selectedVideo} />
                     </div>
-                    <div className="col-md-3">
+                    <div className="col-md-4">
                        <VideoList videos={this.state.videos} onVideoSelect={ this.onVideoSelect } />
                     </div>
                     
