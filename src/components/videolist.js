@@ -7,7 +7,7 @@ var VideoList = ({videos, onVideoSelect}) =>{
     }) 
     console.log(RenderedList)
     return(
-        <div class="list-group" >
+        <div class="list-group mt-3" >
             {RenderedList}
         </div>
     )
