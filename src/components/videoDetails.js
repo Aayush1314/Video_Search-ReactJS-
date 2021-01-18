@@ -1,10 +1,15 @@
 import React from 'react'
 
 var VideoDetail = ( {selectedVideo} ) => {
-    if (!selectedVideo){
-
-        return (<div>LOADING!!</div>)
+    if (selectedVideo===undefined){
+        console.log(selectedVideo)
+        return (<div>NO VIDEOS FOUND!!!, SEARCH SOMETHING ELSE </div>)
     }
+    if (selectedVideo===null){
+        console.log(selectedVideo)
+        return (<div>Please Search Something</div>)
+    }
+
 
     
     var URL = `https://www.youtube.com/embed/${selectedVideo.id.videoId}`
